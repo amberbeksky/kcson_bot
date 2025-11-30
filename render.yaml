@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: kcsson-bot
+    env: docker
+    region: frankfurt
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_FOLDER_ID
+        sync: false
+      - key: WEBHOOK_HOST
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /app/credentials.json

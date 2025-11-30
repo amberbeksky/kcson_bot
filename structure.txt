@@ -1,0 +1,41 @@
+kcsson_bot/
+│
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── database.py
+│   ├── keyboards/
+│   │   ├── __init__.py
+│   │   └── menus.py
+│   ├── handlers/
+│   │   ├── __init__.py
+│   │   ├── start.py
+│   │   ├── auth.py
+│   │   ├── announcements.py
+│   │   ├── orders.py
+│   │   ├── documents.py
+│   │   ├── events.py
+│   │   ├── urgent.py
+│   │   └── admin_panel.py
+│   ├── google_drive/
+│   │   ├── __init__.py
+│   │   ├── drive_service.py
+│   │   └── uploader.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── employees.py
+│   │   ├── access_codes.py
+│   │   ├── announcements.py
+│   │   ├── orders.py
+│   │   ├── documents.py
+│   │   └── events.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── misc.py
+│   └── bot.py
+│
+├── main.py
+├── requirements.txt
+├── Dockerfile
+├── render.yaml
+└── credentials.json   ← загрузишь сюда (или через Render Secrets)
